@@ -6,7 +6,7 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
       rel="stylesheet"
@@ -19,31 +19,678 @@
 
     <title>Document</title>
   </head>
+
   <body>
+    <div class="mask z-index-1"></div>
+    <!-- 首頁區域 -->
     <header class="bg-primary-50">
       <nav>
         <div class="container">
-          <div class="d-flex py-12">
-            <!-- 網站圖示 -->
-            <a href="#" class="logo-link">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/0163848842b749c38a767e05caabbbd18d2f6dc9/2026-web-camp/device-pc.svg"
-                alt="logo"
-                class="logo"
-              />
-            </a>
-            <!-- 導覽列清單 -->
-            <ul
-              class="ml-auto d-flex label-md text-neutral-700 gap-24 align-items-center"
-            >
-              <li><a class="px-12 py-4" href="#">服務項目</a></li>
-              <li><a class="px-12 py-4" href="#">專案作品</a></li>
-              <li><a class="px-12 py-4" href="#">部落格</a></li>
-              <li><a class="px-12 py-4" href="#">與我聯絡</a></li>
-            </ul>
+          <div class="col-12">
+            <div class="d-flex flex-wrap align-items-center">
+              <!-- 網站標誌（logo） -->
+              <a class="logo" href="#">
+                <img
+                  src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg"
+                  alt="Nelson"
+                />
+              </a>
+
+              <!-- 行動版選單按鈕（漢堡按鈕） -->
+              <button class="btn-menu ml-auto" type="button">
+                <span class="material-symbols-outlined">dehaze</span>
+              </button>
+
+              <!-- 主導覽選單 -->
+              <ul class="nav-list label-md d-flex gap-24 ml-auto">
+                <li><a class="nav-link" href="#">服務項目</a></li>
+                <li><a class="nav-link" href="#">專案作品</a></li>
+                <li><a class="nav-link" href="#">部落格</a></li>
+                <li><a class="nav-link" href="#">與我聯絡</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- Hero區域 -->
+    <section class="hero bg-primary-50">
+      <div class="container h-full">
+        <div
+          class="d-flex text-neutral-700 flex-md-col h-full relative align-items-center"
+        >
+          <!-- 左邊 -->
+          <div class="col-5 col-md-12 order-md-2 py-md-24">
+            <!-- 標題 -->
+            <h1 class="mb-24 heading-xxxl heading-mobile-xl mb-md-12">
+              <span class="d-block">Hello</span>
+              <span class="d-block">I'm Nelson</span>
+            </h1>
+
+            <!-- 內文 -->
+            <p class="paragraph-md paragraph-mobile-sm">
+              我是一個擁有 10 年經驗的 UIUX 設計師 和 前端工程師
+            </p>
+            <p class="paragraph-md mb-60 paragraph-mobile-sm mb-md-32">
+              喜歡把美學和程式結合，打造一個又一個精美的網頁設計！
+            </p>
+
+            <div class="lable-md label-mobile-sm">
+              <button
+                class="py-12 px-24 text-neutral-0 bg-neutral-700 rounded-full mr-24 mr-md-12"
+                type="button"
+              >
+                與我聯絡
+              </button>
+              <button
+                class="py-12 px-24 rounded-full btn-outline"
+                type="button"
+              >
+                我的履歷
+              </button>
+            </div>
+          </div>
+
+          <!-- 右邊 -->
+          <div
+            class="col-7 col-md-12 order-md-1 min-h-0 relative h-full ml-auto"
+          >
+            <img
+              class="object-fit-cover"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_person.png?raw=true"
+              alt=""
+            />
+
+            <!-- 泡泡 -->
+            <img
+              class="decorate-blob-up"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_1.png?raw=true"
+              alt=""
+            />
+            <img
+              class="decorate-blob-down"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_2.png?raw=true"
+              alt=""
+            />
+          </div>
+
+          <!-- 裝飾物 -->
+          <img
+            class="decorate-flower flower-left-top"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
+            alt=""
+          />
+          <img
+            class="decorate-line-up"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_4.png?raw=true"
+            alt=""
+          />
+          <img
+            class="decorate-line-down"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_5.png?raw=true"
+            alt=""
+          />
+          <img
+            class="decorate-flower flower-left-bottom"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
+            alt=""
+          />
+          <img
+            class="decorate-flower flower-right-center"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_3.png?raw=true"
+            alt=""
+          />
+          <!-- 手機版使用線條 -->
+          <img
+            class="decorate-line-mobile"
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_decora_6.png?raw=true"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 服務項目區域 -->
+    <section class="services bg-primary-900 py-80 px-40 py-md-40">
+      <div class="container">
+        <!-- 標題 -->
+        <div class="text-neutral-0 mb-40 mb-md-24">
+          <h2>
+            <span class="d-block heading-xxxs heading-mobile-xxxxs"
+              >服務項目</span
+            >
+            <span class="d-block heading-xxxl">SERVICES</span>
+          </h2>
+        </div>
+
+        <!-- 卡片列表 -->
+        <ul
+          class="card-list d-flex gap-24 overflow-x-auto hide-scrollbar text-neutral-700"
+        >
+          <!-- 平面設計 -->
+          <li class="card col-3 bg-primary-50 p-24 p-md-12">
+            <div class="d-flex mb-12 mb-md-8">
+              <div>
+                <p class="heading-xxxs heading-mobile-xxxxs">GRAPHIC</p>
+                <h3 class="heading-md heading-mobile-sm">平面設計</h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-28 text-md-24 ml-auto"
+              >
+                format_color_fill
+              </span>
+            </div>
+
+            <div class="d-flex">
+              <p class="paragraph-md paragraph-mobile-sm mr-12 mr-md-8">
+                從品牌識別到視覺傳達，用專業設計精準傳遞核心價值
+              </p>
+              <span
+                class="material-symbols-outlined text-24 text-md-20 p-12 bg-neutral-700 text-neutral-0 rounded-circle ml-auto"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </li>
+
+          <!-- 網頁設計 -->
+          <li class="card col-3 bg-primary-50 p-24 p-md-12">
+            <div class="d-flex mb-12 mb-md-8">
+              <div>
+                <p class="heading-xxxs heading-mobile-xxxxs">WEBSITE</p>
+                <h3 class="heading-md heading-mobile-sm">網頁設計</h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-28 text-md-24 ml-auto"
+              >
+                screenshot_monitor
+              </span>
+            </div>
+
+            <div class="d-flex">
+              <p class="paragraph-md paragraph-mobile-sm mr-12 mr-md-8">
+                美感易用並重，以 Figma 打造符合直覺的數位體驗
+              </p>
+              <span
+                class="material-symbols-outlined text-24 text-md-20 p-12 bg-neutral-700 text-neutral-0 rounded-circle ml-auto"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </li>
+
+          <!-- 前端切版 -->
+          <li class="card col-3 bg-primary-50 p-24 p-md-12">
+            <div class="d-flex mb-12 mb-md-8">
+              <div>
+                <p class="heading-xxxs heading-mobile-xxxxs">FRONTEND</p>
+                <h3 class="heading-md heading-mobile-sm">前端切版</h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-28 text-md-24 ml-auto"
+              >
+                web
+              </span>
+            </div>
+
+            <div class="d-flex">
+              <p class="paragraph-md paragraph-mobile-sm mr-12 mr-md-8">
+                精準轉譯設計稿細節，建構流暢穩定 RWD 響應式網頁
+              </p>
+              <span
+                class="material-symbols-outlined text-24 text-md-20 p-12 bg-neutral-700 text-neutral-0 rounded-circle ml-auto"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </li>
+
+          <!-- 後端開發 -->
+          <li class="card col-3 bg-primary-50 p-24 p-md-12">
+            <div class="d-flex mb-12 mb-md-8">
+              <div>
+                <p class="heading-xxxs heading-mobile-xxxxs">BACKEND</p>
+                <h3 class="heading-md heading-mobile-sm">後端開發</h3>
+              </div>
+              <span
+                class="material-symbols-outlined text-28 text-md-24 ml-auto"
+              >
+                data_table
+              </span>
+            </div>
+
+            <div class="d-flex">
+              <p class="paragraph-md paragraph-mobile-sm mr-12 mr-md-8">
+                佈署穩定系統架構，串接 API 並確保數據處理安全
+              </p>
+              <span
+                class="material-symbols-outlined text-24 text-md-20 p-12 bg-neutral-700 text-neutral-0 rounded-circle ml-auto"
+              >
+                arrow_outward
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 專案作品區域 -->
+    <section class="projects bg-primary-50 py-80 py-md-40 text-center">
+      <div class="container">
+        <!-- 標題 -->
+        <div class="text-neutral-700 mb-40 mb-md-24">
+          <span class="d-block heading-xxxs heading-mobile-xxxxs"
+            >專案作品</span
+          >
+          <span class="d-block heading-xxxl">PROJECTS</span>
+        </div>
+
+        <!-- 卡片清單 -->
+        <ul class="project-list mb-40">
+          <li
+            class="project-card project-card-1 bg-cover-center mb-24 px-md-16 pb-md-16"
+          >
+            <div class="project-content text-center text-neutral-700">
+              <time
+                class="paragraph-sm paragraph-mobile-xs mb-12 d-block"
+                datetime="2025-10-16"
+              >
+                Oct 16, 2025
+              </time>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                平面設計・網頁設計
+              </p>
+
+              <h3 class="heading-sm heading-mobile-xs mb-12">
+                品牌視覺與電商整合，多肉植物品牌電商建置
+              </h3>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                從品牌識別到 RWD 網站開發，打造療癒系植栽購物體驗
+              </p>
+
+              <button
+                class="project-btn rounded-full bg-neutral-700 text-neutral-0 label-md label-mobile-sm"
+                type="button"
+              >
+                前往專案
+              </button>
+            </div>
+          </li>
+
+          <li
+            class="project-card project-card-2 bg-cover-center mb-24 px-md-16 pb-md-16"
+          >
+            <div class="project-content text-center text-neutral-700">
+              <time
+                class="paragraph-sm paragraph-mobile-xs mb-12 d-block"
+                datetime="2025-10-16"
+              >
+                Oct 16, 2025
+              </time>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                平面設計・網頁設計・前端切版
+              </p>
+
+              <h3 class="heading-sm heading-mobile-xs mb-12">
+                數位產品 UI/UX 設計，個人化財務視覺化軟體
+              </h3>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的操作介面
+              </p>
+
+              <button
+                class="project-btn rounded-full bg-neutral-700 text-neutral-0 label-md label-mobile-sm"
+                type="button"
+              >
+                前往專案
+              </button>
+            </div>
+          </li>
+
+          <li
+            class="project-card project-card-3 bg-cover-center px-md-16 pb-md-16"
+          >
+            <div class="project-content text-center text-neutral-700">
+              <time
+                class="paragraph-sm paragraph-mobile-xs mb-12 d-block"
+                datetime="2025-10-16"
+              >
+                Oct 16, 2025
+              </time>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                前端切版・後端開發
+              </p>
+
+              <h3 class="heading-sm heading-mobile-xs mb-12">
+                品牌識別與包裝設計，法式甜點品牌視覺重塑
+              </h3>
+
+              <p class="paragraph-md paragraph-mobile-sm mb-12">
+                以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象
+              </p>
+
+              <button
+                class="project-btn rounded-full bg-neutral-700 text-neutral-0 label-md label-mobile-sm"
+                type="button"
+              >
+                前往專案
+              </button>
+            </div>
+          </li>
+        </ul>
+
+        <button
+          class="project-btn rounded-full bg-neutral-700 text-neutral-0 label-md label-mobile-sm"
+          type="button"
+        >
+          探索更多
+        </button>
+      </div>
+    </section>
+
+    <!-- 部落格 -->
+    <section class="blogs bg-primary-50 py-80 py-md-40">
+      <div class="container">
+        <div
+          class="blog-header d-flex align-items-start text-neutral-700 mb-40 mb-md-24"
+        >
+          <!-- 標題 -->
+          <div>
+            <span class="d-block heading-xxxs heading-mobile-xxxxs"
+              >部落格</span
+            >
+            <span class="d-block heading-xxxl">BLOGS</span>
+          </div>
+
+          <button
+            class="blog-more-btn rounded-full btn-outline label-md ml-auto"
+            type="button"
+          >
+            探索更多
+          </button>
+        </div>
+
+        <!-- 卡片清單 -->
+        <ul class="blog-list d-flex gap-24 overflow-x-auto hide-scrollbar">
+          <!-- 圖一 -->
+          <li class="blog-card">
+            <img
+              class="blog-img mb-12"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_2.png?raw=true"
+              alt=""
+            />
+
+            <div class="text-neutral-700">
+              <p class="paragraph-md mb-12">
+                <span>UIUX 設計</span>
+                <span>・</span>
+                <span>設計規範</span>
+                <span>・</span>
+                <span>前端技術</span>
+              </p>
+
+              <h3 class="heading-sm mb-12">
+                10年職人手記：如何運用 Figma 與 Storybook
+                打造美感與邏輯兼具的企業級設計系統
+              </h3>
+
+              <div class="paragraph-sm d-flex align-items-center">
+                <time datetime="2022-10-16">Oct 16, 2022</time>
+
+                <div class="d-flex gap-12 ml-auto">
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4"
+                      >visibility</span
+                    >
+                    <span>110 views</span>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4">share</span>
+                    <span>2 shares</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 圖二 -->
+          <li class="blog-card">
+            <img
+              class="blog-img mb-12"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_3.png?raw=true"
+              alt=""
+            />
+
+            <div class="text-neutral-700">
+              <p class="paragraph-md mb-12">
+                <span>品牌設計</span>
+                <span>・</span>
+                <span>平面設計</span>
+                <span>・</span>
+                <span>UIUX 設計</span>
+              </p>
+
+              <h3 class="heading-sm mb-12">
+                從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯
+              </h3>
+
+              <div class="paragraph-sm d-flex align-items-center">
+                <time datetime="2022-10-16">Oct 16, 2022</time>
+
+                <div class="d-flex gap-12 ml-auto">
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4"
+                      >visibility</span
+                    >
+                    <span>110 views</span>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4">share</span>
+                    <span>2 shares</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="blog-card">
+            <img
+              class="blog-img mb-12"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_5.png?raw=true"
+              alt=""
+            />
+
+            <div class="text-neutral-700">
+              <p class="paragraph-md mb-12">
+                <span>前端技術</span>
+                <span>・</span>
+                <span>後端架構</span>
+                <span>・</span>
+                <span>AI 趨勢應用</span>
+              </p>
+
+              <h3 class="heading-sm mb-12">
+                揭開金融 App 的設計密碼：如何優化 Open Bank API
+                的複雜數據呈現與後端串接安全性
+              </h3>
+
+              <div class="paragraph-sm d-flex align-items-center">
+                <time datetime="2022-10-16">Oct 16, 2022</time>
+
+                <div class="d-flex gap-12 ml-auto">
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4"
+                      >visibility</span
+                    >
+                    <span>110 views</span>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <span class="material-symbols-outlined mr-4">share</span>
+                    <span>2 shares</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 電子報訂閱區域 -->
+    <section class="subscription">
+      <div class="container relative">
+        <div class="subscription-inner d-flex">
+          <!-- 左邊圖片 -->
+          <div class="subscription-img-wrap col-5">
+            <img
+              class="subscription-img object-fit-cover"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription.png?raw=true"
+              alt=""
+            />
+          </div>
+
+          <!-- 右邊內容 -->
+          <div class="subscription-content col-7 text-neutral-0">
+            <h2 class="mb-24">
+              <span class="d-block heading-xxxs heading-mobile-xxxxs">
+                電子報訂閱
+              </span>
+              <span class="d-block heading-xxxl"> SUBSCRIPTION </span>
+            </h2>
+
+            <p class="paragraph-md mb-24">
+              你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用
+              AI 工具提升產能！
+            </p>
+
+            <div class="subscription-form d-flex">
+              <input
+                class="subscription-input paragraph-md"
+                type="email"
+                placeholder="電子信箱"
+              />
+              <button
+                class="subscription-btn label-md rounded-full"
+                type="button"
+              >
+                送出
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 頁尾區域 -->
+    <footer class="bg-primary-900 text-neutral-0 py-80">
+      <div class="container">
+        <div class="d-flex flex-md-col">
+          <!-- 聯絡資訊區域 -->
+          <div class="col-5 col-md-12">
+            <h2 class="mb-24">
+              <span class="d-block heading-xxxs">與我聯絡</span>
+              <span class="d-block heading-xxxl">CONTANT</span>
+            </h2>
+
+            <!-- 內文 -->
+            <p class="paragraph-md mb-4">若有數位產品設計和開發相關問題</p>
+            <p class="paragraph-md mb-92 mb-md-24">
+              歡迎填寫表單 或 直接與我聯絡！
+            </p>
+
+            <div class="d-block d-md-none">
+              <!-- social icon 列表 -->
+              <div class="d-flex mb-24 gap-12">
+                <a href="#" class="p-12 rounded-full btn-outline line-height-1">
+                  <i class="bi bi-instagram text-24"></i>
+                </a>
+                <a href="#" class="p-12 rounded-full btn-outline line-height-1">
+                  <i class="bi bi-line text-24"></i>
+                </a>
+                <a href="#" class="p-12 rounded-full btn-outline line-height-1">
+                  <i class="bi bi-linkedin text-24"></i>
+                </a>
+              </div>
+
+              <!-- 信箱資訊 -->
+              <a href="mailto:service@hexschool.com" class="d-flex">
+                <span class="material-symbols-outlined"> drafts </span>
+                <p class="paragraph-md">service@hexschool.com</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- 聯絡資訊表格 -->
+          <div class="col-7 col-md-12">
+            <form class="d-flex flex-wrap gap-24 px-40 px-md-0 paragraph-md">
+              <input
+                class="contact-input-half btn-outline rounded-40 px-32 py-20"
+                type="text"
+                placeholder="姓名"
+              />
+              <input
+                class="contact-input-half btn-outline rounded-40 px-32 py-20"
+                type="tel"
+                placeholder="手機號碼"
+              />
+              <input
+                class="w-full btn-outline rounded-40 px-32 py-20"
+                type="email"
+                placeholder="電子信箱"
+              />
+              <textarea
+                class="w-full btn-outline rounded-40 px-32 py-20"
+                rows="4"
+                placeholder="備註"
+              ></textarea>
+
+              <button
+                class="label-md bg-neutral-0 text-neutral-700 py-12 w-full text-center rounded-full"
+                type="submit"
+              >
+                送出
+              </button>
+            </form>
+          </div>
+
+          <!-- 行動裝置版本 -->
+          <div class="d-none d-md-block">
+            <!-- social icon 列表 -->
+            <div class="d-flex mb-24 gap-12">
+              <a href="#" class="p-12 rounded-full btn-outline">
+                <i class="bi bi-instagram text-24 line-height-1"></i>
+              </a>
+              <a href="#" class="p-12 rounded-full btn-outline">
+                <i class="bi bi-line text-24 line-height-1"></i>
+              </a>
+              <a href="#" class="p-12 rounded-full btn-outline">
+                <i class="bi bi-linkedin text-24 line-height-1"></i>
+              </a>
+            </div>
+
+            <!-- 信箱資訊 -->
+            <a href="mailto:service@hexschool.com" class="d-flex gap-8">
+              <span class="material-symbols-outlined text-24 text-md-20">
+                drafts
+              </span>
+              <p class="paragraph-md paragraph-mobile-sm">
+                service@hexschool.com
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

@@ -3,8 +3,10 @@
 
 /* 設定設計稿色票變數 */
 :root {
-  --column: 12; /* 拆分成 12 格網格系統 */
-  --gutter: 24px; /* gutter 配置 24px */
+  --column: 12;
+  /* 拆分成 12 格網格系統 */
+  --gutter: 24px;
+  /* gutter 配置 24px */
 
   /* Primary */
   --color-primary-50: #fdf7f1;
@@ -53,7 +55,8 @@ img {
 
 a {
   text-decoration: none;
-  color: inherit; /* 繼承父層顏色 */
+  color: inherit;
+  /* 繼承父層顏色 */
 }
 
 /* google icon 預設設定 */
@@ -66,6 +69,19 @@ a {
     "opsz" 24;
   font-size: 20px;
   display: block;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+textarea {
+  resize: none;
 }
 
 /* 設計稿字型 class 設定 */
@@ -114,22 +130,27 @@ a {
   font-size: 28px;
   font-weight: 700;
 }
+
 .heading-sm {
   font-size: 24px;
   font-weight: 700;
 }
+
 .heading-xs {
   font-size: 20px;
   font-weight: 700;
 }
+
 .heading-xxs {
   font-size: 18px;
   font-weight: 700;
 }
+
 .heading-xxxs {
   font-size: 16px;
   font-weight: 700;
 }
+
 .heading-xxxxs {
   font-size: 14px;
   font-weight: 700;
@@ -140,10 +161,12 @@ a {
   font-size: 16px;
   font-weight: 500;
 }
+
 .label-sm {
   font-size: 14px;
   font-weight: 500;
 }
+
 .label-xs {
   font-size: 13px;
   font-weight: 500;
@@ -154,10 +177,12 @@ a {
   font-size: 16px;
   font-weight: 500;
 }
+
 .paragraph-sm {
   font-size: 14px;
   font-weight: 500;
 }
+
 .paragraph-xs {
   font-size: 13px;
   font-weight: 500;
@@ -168,10 +193,14 @@ a {
 
 .btn-reset {
   border: 0;
-  background: transparent; /* 移除按鈕預設背景 */
-  color: inherit; /* 繼承父層文字顏色 */
-  font: inherit; /* 繼承父層字型設定 */
-  cursor: pointer; /* 滑鼠移入時顯示手型游標 */
+  background: transparent;
+  /* 移除按鈕預設背景 */
+  color: inherit;
+  /* 繼承父層文字顏色 */
+  font: inherit;
+  /* 繼承父層字型設定 */
+  cursor: pointer;
+  /* 滑鼠移入時顯示手型游標 */
 }
 
 .btn-outline {
@@ -258,6 +287,10 @@ a {
   margin-bottom: 40px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .mb-92 {
   margin-bottom: 92px;
 }
@@ -317,6 +350,11 @@ a {
 .px-24 {
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .px-40 {
@@ -434,7 +472,8 @@ a {
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
-    display: none; /* Safari 專用 */
+    display: none;
+    /* Safari 專用 */
   }
 }
 
@@ -549,6 +588,10 @@ a {
 @media (max-width: 992px) {
   .d-mb-block {
     display: block;
+  }
+
+  .d-md-none {
+    display: none;
   }
 
   .heading-mobile-xl {
@@ -739,7 +782,13 @@ a {
   .p-md-12 {
     padding: 12px;
   }
+
   .mr-md-8 {
     margin-right: 8px;
+  }
+
+  .py-md-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }

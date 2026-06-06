@@ -1,0 +1,454 @@
+/* header 導覽列 */
+
+.main-nav {
+  background-color: var(--color-primary-50);
+}
+
+.logo {
+  padding: 12px 0;
+}
+
+.nav-list {
+  color: var(--color-neutral-700);
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+.btn-menu {
+  display: none;
+  /* 預設隱藏（桌機版不顯示） */
+  border: 0;
+  padding: 12px;
+  background: transparent;
+  /* 移除按鈕預設背景 */
+  color: inherit;
+  /* 繼承父層文字顏色 */
+  font: inherit;
+  /* 繼承父層字型設定 */
+  cursor: pointer;
+  /* 滑鼠移入時顯示手型游標 */
+}
+
+.contact-input-half {
+  --gap: 24px;
+  width: calc((100% - var(--gap)) / 2);
+}
+
+/* 頁面內容佔位區塊，用於模擬實際內容高度 */
+.placeholder {
+  height: 100vh;
+  background-color: #fa0;
+}
+
+.hero {
+  position: relative;
+  height: calc(100vh - 64px);
+  overflow: hidden;
+}
+
+/* 遮罩樣式 */
+.menu-open .mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+/* 讓 header / nav 壓在遮罩上方 */
+header {
+  position: relative;
+  z-index: 20;
+}
+
+/* 讓內容在裝飾上方 */
+.hero .container {
+  height: 100%;
+}
+
+/* 泡泡上：相對於右側圖片區塊 */
+.decorate-blob-up {
+  position: absolute;
+  top: 97px;
+  left: -81px;
+  width: 200px;
+  height: 198px;
+}
+
+/* 泡泡下：相對於右側圖片區塊 */
+.decorate-blob-down {
+  position: absolute;
+  right: -80px;
+  bottom: 87px;
+  width: 160px;
+  height: 137px;
+}
+
+/* 左上花花 */
+.flower-left-top {
+  position: absolute;
+  top: 56px;
+  left: -226px;
+  width: 140px;
+  height: 140px;
+}
+
+/* 左上線條 */
+.decorate-line-up {
+  position: absolute;
+  top: 120px;
+  left: -87px;
+  width: 314px;
+}
+
+/* 左下線條 */
+.decorate-line-down {
+  position: absolute;
+  left: 211px;
+  bottom: 83px;
+  width: 180px;
+}
+
+/* 左下小花 */
+.flower-left-bottom {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 192px;
+  left: 391px;
+}
+
+/* 右側花花 */
+.flower-right-center {
+  position: absolute;
+  top: 206px;
+  right: -170px;
+  width: 140px;
+  height: 140px;
+}
+
+.decorate-line-mobile {
+  display: none;
+}
+
+/* Service 區塊 */
+.card-list .card {
+  min-width: 306px;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+/* Projects 區塊 */
+.project-card {
+  min-height: 270px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.project-card-1 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true");
+}
+
+.project-card-2 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true");
+}
+
+.project-card-3 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true");
+}
+
+.project-content {
+  width: 386px;
+  max-width: 386px;
+  padding: 40px;
+  background-color: var(--color-primary-50);
+}
+
+.project-btn {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+/* Blogs 區塊 */
+.blog-more-btn {
+  padding: 12px 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.blog-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.blog-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.blog-card .material-symbols-outlined {
+  font-size: 20px;
+}
+
+/* Subscription 區塊 */
+.subscription {
+  position: relative;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.subscription::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-dark-60a);
+}
+.subscription .container {
+  position: relative;
+  z-index: 1;
+}
+
+.subscription-inner {
+  min-height: 380px;
+}
+
+.subscription-img-wrap {
+  min-height: 380px;
+}
+
+.subscription-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscription-content {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscription-form {
+  border: 1px solid var(--color-neutral-0);
+  border-radius: 40px;
+  padding: 8px;
+}
+
+.subscription-input {
+  flex: 1;
+  padding: 12px 24px;
+  color: var(--color-neutral-0);
+}
+
+.subscription-input::placeholder {
+  color: var(--color-neutral-0);
+}
+
+.subscription-btn {
+  padding: 12px 24px;
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-700);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  /* 漢堡選單手機版顯示 */
+  .btn-menu {
+    display: block;
+  }
+
+  /* 
+    手機版主導覽列預設為收合狀態。
+    點擊選單按鈕後，透過加入 active class 切換為展開狀態。
+  */
+  .nav-list {
+    opacity: 0;
+    /* 讓內容透明，但元素本身仍會佔據版面空間 */
+    width: 100%;
+    max-height: 0px;
+    /* 將高度收合為 0，避免元素佔據垂直空間 */
+    overflow: hidden;
+    /* 隱藏超出 max-height 範圍的內容 */
+  }
+
+  /* 主導覽列展開狀態 */
+  .nav-list.active {
+    opacity: 1;
+    /* 讓內容顯示出來 */
+    max-height: 100%;
+    /* 展開導覽列高度 */
+    display: flex;
+    /* 顯示導覽列，並啟用 flex 排版 */
+    flex-direction: column;
+    /* 手機版選單項目改為垂直排列 */
+    text-align: center;
+    transition:
+      opacity 0.3s ease-in,
+      max-height 0.3s ease-in;
+    /* 加入淡入與展開動畫 */
+  }
+
+  /* 桌機版左上花、右邊花、桌機線條都隱藏 */
+  .flower-left-top,
+  .flower-right-center,
+  .decorate-line-up,
+  .decorate-line-down {
+    display: none;
+  }
+
+  /* 泡泡上：相對於右側圖片區塊 */
+  .decorate-blob-up {
+    position: absolute;
+    top: 97px;
+    left: -30px;
+    width: 80px;
+    height: 79px;
+  }
+
+  /* 泡泡下：相對於右側圖片區塊 */
+  .decorate-blob-down {
+    position: absolute;
+    right: -25px;
+    bottom: 87px;
+    width: 80px;
+    height: 60px;
+  }
+
+  /* 左下線條 */
+  .decorate-line-down {
+    position: absolute;
+    left: 211px;
+    bottom: 83px;
+    width: 113.14px;
+  }
+
+  /* 左下小花 */
+  .flower-left-bottom {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 192px;
+    left: 250px;
+  }
+
+  /* 手機版線條 */
+  .decorate-line-mobile {
+    position: absolute;
+    display: block;
+    top: 580px;
+    left: 134px;
+  }
+
+  .card-list .card {
+    min-width: 260px;
+  }
+
+  /* Projects 手機版 */
+  .project-card {
+    min-height: auto;
+    padding-top: 280px;
+    display: block;
+  }
+
+  .project-content {
+    width: 100%;
+    max-width: none;
+    padding: 24px;
+  }
+
+  .project-card-1 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true");
+  }
+
+  .project-card-2 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_2.png?raw=true");
+  }
+
+  .project-card-3 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_3.png?raw=true");
+  }
+
+  .blog-list {
+    overflow-x: auto;
+    gap: 12px;
+  }
+
+  .blog-card {
+    min-width: 260px;
+  }
+
+  .blog-img {
+    height: 160px;
+  }
+
+  .blog-more-btn {
+    padding: 12px 20px;
+    white-space: nowrap;
+  }
+
+  .subscription .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscription-inner {
+    flex-direction: column;
+  }
+
+  .subscription-img-wrap {
+    width: 100%;
+    min-height: 240px;
+  }
+  .subscription-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .subscription-content {
+    width: 100%;
+    padding: 40px 12px;
+  }
+
+  .contact-input-half {
+    width: 100%;
+  }
+
+  footer form {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  footer textarea {
+    min-height: 146px;
+  }
+
+  footer .col-5 {
+    margin-bottom: 24px;
+  }
+}
